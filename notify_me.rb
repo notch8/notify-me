@@ -1,9 +1,9 @@
 require 'sinatra'
 require 'sinatra/sequel'
 
-set :product_name, 'Acme Widget'
-set :product_keywords, 'widget, acme, awesome, cool'
-set :placeholder_email, 'you@yourcompany.com'
+set :product_name, 'My Passage Plan'
+set :product_keywords, 'death, dying, soul, sitter, hospice, elder care, palliative care, grief, positive grief method, comfort, loss of loved one, loss, mourning, home care, mindful mourning, sara gilman, stacey canfield, daniel canfield'
+set :placeholder_email, 'you@yourdomain.com'
 set :database, ENV['DATABASE_URL'] || 'sqlite://notify-me.db'
 set :analytics_id, 'UA-XXXXX-X' #Just keep UA-XXXXX-X to not load analytics
 
@@ -68,7 +68,10 @@ __END__
 @@ index
 <div id='boxtop'></div>
 <div id='banner'>
-  <h1><%= "#{settings.product_name} will be launching soon!" %></h1>
+  <img src='/soul_logo.jpg' alt='logo'>
+  <div id="text">
+    <h1><%= "#{settings.product_name} will be launching soon!" %></h1>
+  </div>
 </div>
 <div id='boxmain'>
   <p>Enter your email address below and we'll notify you when it has launched.</p>
